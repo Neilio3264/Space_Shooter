@@ -34,5 +34,23 @@ export class PhaserSpaceGame extends Game implements LifeCycle {
 
         // load the dust image
         this.game.load.spritesheet('dust', 'assets/dust.png', 64, 64, 16);
+
+        // load the explosion image
+        this.game.load.spritesheet('kaboom', 'assets/explostions.png', 64, 64, 16);
+
+        // load the power-up graphic
+        this.game.load.image('pickup', 'assets/pickup.png');
+
+        // load the ship graphic
+        this.game.load.spritesheet('shooter-sprite', 'assets/ship.png', 32, 32);
+    }
+
+    public create(): void {
+        super.properties(this.game);
+        super.manageAssets(this.game);
+    }
+
+    public update(): void {
+        super.gameUpdate(this.game);
     }
 }
