@@ -1,6 +1,5 @@
 import { Game } from "../game/game.class";
 import { LifeCycle } from "./lifecycle";
-import { Game as PhaserGame } from "phaser-ce";
 
 export class PhaserSpaceGame extends Game implements LifeCycle {
     // The PhaserSpaceGame class will have one attribute,
