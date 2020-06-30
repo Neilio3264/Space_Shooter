@@ -1,3 +1,5 @@
+import {KeyBoardControl} from '../../controls/keyboard.class';
+
 export class Player {
     // create your member variables like we glanced over inside
     // of our domain the player instance which will be a type of
@@ -56,10 +58,10 @@ export class Player {
 
     // If a player picks up a loot, we shall assign it to the
     // player who picked it up
-    public assignPickup(game, player?): void {
-        this.projectile = new Projectile(game, player.player);
-        this.playerState.set('ammo', this.projectile.bulletCount);
-    }
+    // public assignPickup(game, player?): void {
+    //     this.projectile = new Projectile(game, player.player);
+    //     this.playerState.set('ammo', this.projectile.bulletCount);
+    // }
 
     public view(): void {
         this.controls.update();
